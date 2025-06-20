@@ -1,0 +1,82 @@
+# Node.js / npm
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm/
+.yarn/
+.env
+.DS_Store # macOS specific
+build/
+dist/
+*.log
+*.tgz
+*.zip
+
+# React Native specific
+# Android
+android/build/
+android/app/build/
+android/.gradle/
+android/app/.cxx/
+android/gradle/
+android/local.properties
+android/*.keystore
+android/debug.keystore
+android/app/src/debug/
+android/app/proguard-project.txt # Typically ignored as it's a generated configuration
+android/app/release.apk
+android/app/debug.apk
+
+# iOS
+ios/build/
+ios/Pods/
+ios/.symlinks/
+ios/Flutter/Generated.xcconfig # If using Flutter in some hybrid setup, otherwise not needed
+ios/DerivedData/
+ios/build/
+ios/*.xcworkspace # Might be needed for some projects, but generally ignored to regenerate
+ios/*.xcodeproj/project.xcworkspace/
+ios/*.xcodeproj/xcuserdata/
+ios/*.xcodeproj/xcshareddata/
+ios/*.xcworkspace/xcuserdata/
+ios/Podfile.lock # Important: If you want to force all developers to run 'pod install' after clone
+ios/.xcode.stash
+
+# Metro Bundler Cache
+.expo/
+.react-native/
+.tmp/
+*.iml
+*.hprof # JVM heap dumps
+
+# VS Code specific
+.vscode/
+
+# Editor specific
+*.sublime-project
+*.sublime-workspace
+.idea/ # IntelliJ IDEA / WebStorm
+
+# React Native Debugger
+.rnrolerc
+
+# Custom files (add any other local files you want to ignore)
+# For example, if you have any local test data:
+# data/*.test.json
+
+# If you want to ignore all .env files recursively
+**/.env*
+
+# Ignore specific files within the subdirectories if they should be ignored
+# e.g., for the 'server' directory
+server/node_modules/
+server/.env
+server/build/
+server/dist/
+
+# For the 'todo_app' (React Native) directory
+todo_app/node_modules/
+todo_app/android/build/
+todo_app/ios/build/
+todo_app/ios/Pods/
